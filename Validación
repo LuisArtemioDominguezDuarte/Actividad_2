@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="name" content="Luis Artemio Dominguez Duarte">
+    <meta name="contenido" content="Validacion de nombre, apellidos y contraseña">
+    <title>Validacion</title>
+    <script type="text/javascript">
+        var nombre = prompt('Ingrese sus nombres:');
+        var apellido =prompt('Ingrese sus apellidos:');
+        do{
+            var contraseña =prompt("Incgrese su contraseña (no debe de tener caracteres especiales): ");
+            var salida;
+        if(contraseña.length >= 12 && !(/^\d[A-Z]$/.test(contraseña))&& !(/^\d[a-z]$/.test(contraseña)) && !(/^\d[0-9]$/.test(contraseña)) && !(/^\d[!"#$%&/()=?¡'´+{}]$/.test(contraseña))){
+            alert("La contraseña a sido guardada");
+            alert(nombre+" "+apellido + " " + contraseña);
+            console.log(nombre+" "+apellido + " " + contraseña);
+            var salida = true;
+        }else{
+            alert("Contraseña no valida (Tiene caracteres especiales o no cumplre con el minimo de 12 caracteres)");
+            var salida = false;
+        }
+        }while (salida==false);
+            
+        console.log(nombre+" "+apellido + " " + contraseña);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
