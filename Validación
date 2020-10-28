@@ -18,7 +18,7 @@
             console.log(nombre+" "+apellido + " " + contraseña);
             var salida = true;
         }else{
-            alert("Contraseña no valida (Tiene caracteres especiales o no cumplre con el minimo de 12 caracteres)");
+            alert("Contraseña no valida (No tiene mayusculas, No tiene caracteres especiales o no cumplre con el minimo de 12 caracteres)");
             var salida = false;
         }
         }while (salida==false);
