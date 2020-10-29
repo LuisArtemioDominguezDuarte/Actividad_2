@@ -14,14 +14,14 @@
         var contraseña =document.getElementById("contraseña").value;
         do{
         var salida;
-        if(Nombre.length != 0 && !(/^\d[A-Z]$/.test(Nombre))&& !(/^\d[a-z]$/.test(Nombre)) && /^\s+$/.test(Nombre)){
+        if(Nombre.length != 0 && !(/^\d[A-Z]$/.test(Nombre))&& !(/^\d[a-z]$/.test(Nombre))){
                 alert("El nombre se a guardado");
                 var salida = true;
             }else{
                 alert("un nombre solo es con letras o ponga un nombre");
                 var salida = true;
             }
-            if(Apellidos.length!=0 && !(/^\d[A-Z]$/.test(Apellidos))&& !(/^\d[a-z]$/.test(Apellidos)) && /^\s+$/.test(Apellidos)){
+            if(Apellidos.length!=0 && !(/^\d[A-Z]$/.test(Apellidos))&& !(/^\d[a-z]$/.test(Apellidos))){
                 alert("los apellidos se an guardado");
                 var salida = true;
             }else{
